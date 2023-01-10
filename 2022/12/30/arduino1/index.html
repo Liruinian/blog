@@ -1,0 +1,716 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/logo-small.png">
+  <link rel="icon" href="../../../../img/logo-small.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="liruinian">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="Arduino 项目一览表立项的项目 智能小车  1602a 小屏幕  蓝牙通信  暂定   已完成的项目 机械臂+控制器项目  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172">
+<meta property="og:type" content="article">
+<meta property="og:title" content="arduino 项目一览表">
+<meta property="og:url" content="https://blog.liruinian.top/2022/12/30/arduino1/index.html">
+<meta property="og:site_name" content="Tim&#39;s blog">
+<meta property="og:description" content="Arduino 项目一览表立项的项目 智能小车  1602a 小屏幕  蓝牙通信  暂定   已完成的项目 机械臂+控制器项目  123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-12-30T12:14:00.000Z">
+<meta property="article:modified_time" content="2023-01-10T08:42:43.137Z">
+<meta property="article:author" content="liruinian">
+<meta property="article:tag" content="arduino">
+<meta property="article:tag" content="编程">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>arduino 项目一览表 - Tim&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="../../../../css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="../../../../css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"blog.liruinian.top","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="../../../../js/utils.js" ></script>
+  <script  src="../../../../js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="../../../../index.html">
+      <strong>Tim&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../index.html">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('../../../../img/blogbg.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="arduino 项目一览表"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-12-30 12:14" pubdate>
+          2022年12月30日 中午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          8.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          69 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">arduino 项目一览表</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="Arduino-项目一览表"><a href="#Arduino-项目一览表" class="headerlink" title="Arduino 项目一览表"></a>Arduino 项目一览表</h1><h2 id="立项的项目"><a href="#立项的项目" class="headerlink" title="立项的项目"></a>立项的项目</h2><ul>
+<li><p>智能小车</p>
+</li>
+<li><p>1602a 小屏幕</p>
+</li>
+<li><p>蓝牙通信</p>
+</li>
+<li><p>暂定</p>
+</li>
+</ul>
+<h2 id="已完成的项目"><a href="#已完成的项目" class="headerlink" title="已完成的项目"></a>已完成的项目</h2><ul>
+<li>机械臂+控制器项目</li>
+</ul>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;LiquidCrystal_I2C.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;Servo.h&gt;</span></span><br><br>LiquidCrystal_I2C <span class="hljs-title function_">lcd</span><span class="hljs-params">(<span class="hljs-number">0x27</span>, <span class="hljs-number">16</span>, <span class="hljs-number">2</span>)</span>;<br>Servo Rotate;<br>Servo Left;<br>Servo Right;<br>Servo Grab;<br><span class="hljs-type">int</span> buzzer = <span class="hljs-number">7</span>;<br><span class="hljs-type">int</span> PIN_SPEAKER = <span class="hljs-number">7</span>;<br><span class="hljs-comment">//char notes[] = &quot;eefehgeefeiheeljhgfddjhih&quot;;</span><br><span class="hljs-comment">//int beats[] = &#123;1, 1, 2, 2, 2, 4, 1, 1, 2, 2, 2, 4, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 4, 1&#125;;</span><br><span class="hljs-comment">//5L 5L 6L 5L 1 7L 5L 5L 6L 5L 2 1 5L 5L 5 3 1 7L 6L 4 4 3 1 2 1</span><br><span class="hljs-comment">//int length = 25;</span><br><span class="hljs-comment">//生日快乐歌</span><br><span class="hljs-comment">//char notes[] = &quot;ceefecaabccbabceefecaabccbbadddfeecbceefecaabccbba&quot;;</span><br><span class="hljs-comment">//int beats[] = &#123;2,2,2,1,2,2,2,1,1,2,2,2,2,8,2,2,2,1,2,2,2,1,1,2,2,2,2,8,4,4,2,6,4,2,2,8,2,2,2,1,2,2,2,1,1,2,2,2,2,8&#125;;</span><br><span class="hljs-comment">//int length = 51;</span><br><span class="hljs-comment">//蜜雪冰城</span><br><span class="hljs-type">char</span> notes[] = <span class="hljs-string">&quot;cfjjikceiihjhihghjifchgf&quot;</span>;<br><span class="hljs-type">int</span> beats[] = &#123;<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">6</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">6</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">6</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>,<span class="hljs-number">6</span>&#125;;<br><span class="hljs-comment">//int length = 24;</span><br><span class="hljs-comment">//最伟大的作品</span><br><span class="hljs-comment">//&#123;&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;, &#x27;e&#x27;, &#x27;f&#x27;, &#x27;g&#x27;,</span><br><span class="hljs-comment">// &#x27;h&#x27;, &#x27;i&#x27;, &#x27;j&#x27;, &#x27;k&#x27;, &#x27;l&#x27;, &#x27;m&#x27;, &#x27;n&#x27;,</span><br><span class="hljs-comment">// &#x27;o&#x27;, &#x27;p&#x27;, &#x27;q&#x27;, &#x27;r&#x27;, &#x27;s&#x27;, &#x27;t&#x27;, &#x27;u&#x27;&#125;;</span><br><span class="hljs-type">int</span> tempo = <span class="hljs-number">150</span>;<br><br><br><span class="hljs-type">int</span> mode = <span class="hljs-number">0</span>;<br><span class="hljs-comment">//0:direct; 1:serial;</span><br><span class="hljs-type">int</span> GrabButton = <span class="hljs-number">12</span>;<br><span class="hljs-type">int</span> SoundButton = <span class="hljs-number">13</span>;<br><span class="hljs-comment">// order: Rotate9 Left11 Right8 Grab10</span><br><span class="hljs-comment">// limit: 0~180 80~180 60~180 80~100</span><br><span class="hljs-type">int</span> Initial[<span class="hljs-number">4</span>] = &#123;<span class="hljs-number">90</span>, <span class="hljs-number">120</span>, <span class="hljs-number">90</span>, <span class="hljs-number">45</span>&#125;;<span class="hljs-comment">//Initial servo status</span><br>String Servoname[<span class="hljs-number">4</span>] = &#123;<span class="hljs-string">&quot;Rotate&quot;</span>, <span class="hljs-string">&quot;Left&quot;</span>, <span class="hljs-string">&quot;Right&quot;</span>, <span class="hljs-string">&quot;Grab&quot;</span>&#125;;<br>String comdata = <span class="hljs-string">&quot;&quot;</span>;<br><span class="hljs-type">int</span> numdata[<span class="hljs-number">6</span>] = &#123;<span class="hljs-number">0</span>&#125;, mark = <span class="hljs-number">0</span>;<br>boolean Grabbing;<br><span class="hljs-type">int</span> RotateRD;<br><span class="hljs-type">int</span> LeftRD;<br><span class="hljs-type">int</span> RightRD;<br><span class="hljs-type">int</span> GrabRD;<br><span class="hljs-type">void</span> <span class="hljs-title function_">output</span><span class="hljs-params">()</span> &#123;<br>  Serial.print(<span class="hljs-string">&quot;Rotate: &quot;</span>);<br>  Serial.print(RotateRD);<br>  Serial.print(<span class="hljs-string">&quot; Left: &quot;</span>);<br>  Serial.print(LeftRD);<br>  Serial.print(<span class="hljs-string">&quot; Right: &quot;</span>);<br>  Serial.print(RightRD);<br>  Serial.print(<span class="hljs-string">&quot; Grab: &quot;</span>);<br>  Serial.println(GrabRD);<br>  lcd.setCursor(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);<br>  lcd.print(Rotate.read());<br>  lcd.print(<span class="hljs-string">&quot;/&quot;</span>);<br>  lcd.print(Left.read());<br>  lcd.print(<span class="hljs-string">&quot;/&quot;</span>);<br>  lcd.print(Right.read());<br>  lcd.print(<span class="hljs-string">&quot;/&quot;</span>);<br>  lcd.print(Grabbing);<br>  lcd.print(<span class="hljs-string">&quot;    &quot;</span>);<br>&#125;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">playTone</span><span class="hljs-params">(<span class="hljs-type">int</span> tone, <span class="hljs-type">int</span> duration)</span> &#123;<br>  <span class="hljs-keyword">for</span> (<span class="hljs-type">long</span> i = <span class="hljs-number">0</span>; i &lt; duration * <span class="hljs-number">1000L</span>; i += tone * <span class="hljs-number">2</span>) &#123;<br>    digitalWrite(PIN_SPEAKER, HIGH);<br>    delayMicroseconds(tone);<br>    digitalWrite(PIN_SPEAKER, LOW);<br>    delayMicroseconds(tone);<br>  &#125;<br>&#125;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">playNote</span><span class="hljs-params">(<span class="hljs-type">char</span> note, <span class="hljs-type">int</span> duration)</span> &#123;<br>  <span class="hljs-type">char</span> names[] = &#123;<span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;c&#x27;</span>, <span class="hljs-string">&#x27;d&#x27;</span>, <span class="hljs-string">&#x27;e&#x27;</span>, <span class="hljs-string">&#x27;f&#x27;</span>, <span class="hljs-string">&#x27;g&#x27;</span>, <span class="hljs-string">&#x27;h&#x27;</span>, <span class="hljs-string">&#x27;i&#x27;</span>, <span class="hljs-string">&#x27;j&#x27;</span>, <span class="hljs-string">&#x27;k&#x27;</span>, <span class="hljs-string">&#x27;l&#x27;</span>, <span class="hljs-string">&#x27;m&#x27;</span>, <span class="hljs-string">&#x27;n&#x27;</span>, <span class="hljs-string">&#x27;o&#x27;</span>, <span class="hljs-string">&#x27;p&#x27;</span>, <span class="hljs-string">&#x27;q&#x27;</span>, <span class="hljs-string">&#x27;r&#x27;</span>, <span class="hljs-string">&#x27;s&#x27;</span>, <span class="hljs-string">&#x27;t&#x27;</span>, <span class="hljs-string">&#x27;u&#x27;</span>&#125;;<br>  <span class="hljs-type">int</span> tones[] = &#123;<span class="hljs-number">1908</span>, <span class="hljs-number">1700</span>, <span class="hljs-number">1515</span>, <span class="hljs-number">1432</span>, <span class="hljs-number">1275</span>, <span class="hljs-number">1136</span>, <span class="hljs-number">1012</span>, <span class="hljs-number">956</span>, <span class="hljs-number">851</span>, <span class="hljs-number">758</span>, <span class="hljs-number">716</span>, <span class="hljs-number">637</span>, <span class="hljs-number">568</span>, <span class="hljs-number">506</span>, <span class="hljs-number">478</span>, <span class="hljs-number">425</span>, <span class="hljs-number">379</span>, <span class="hljs-number">357</span>, <span class="hljs-number">318</span>, <span class="hljs-number">284</span>, <span class="hljs-number">253</span>&#125;;<br><br>  <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">12</span>; i++) &#123;<br>    <span class="hljs-keyword">if</span> (names[i] == note) &#123;<br>      playTone(tones[i] * <span class="hljs-number">2</span>, duration);<br>    &#125;<br>  &#125;<br>&#125;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">buzzsound</span><span class="hljs-params">()</span> &#123;<br>  <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; length; i++) &#123;<br>    <span class="hljs-keyword">if</span> (notes[i] == <span class="hljs-string">&#x27; &#x27;</span>) &#123;<br>      delay(beats[i] * tempo);<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>      playNote(notes[i], beats[i] * tempo);<br>    &#125;<br>    delay(tempo / <span class="hljs-number">2</span>);<br>  &#125;<br><br><br>&#125;<br><span class="hljs-type">void</span> <span class="hljs-title function_">servowrite</span><span class="hljs-params">(<span class="hljs-type">int</span> servonum, <span class="hljs-type">int</span> goal, boolean slowbl, boolean ifdelay)</span> &#123;<br>  <span class="hljs-keyword">switch</span> (servonum) &#123;<br>    <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:<br>      <span class="hljs-keyword">if</span> (slowbl == <span class="hljs-literal">true</span>) &#123;<br>        slowmove (Rotate, goal, ifdelay);<br>      &#125; <span class="hljs-keyword">else</span> &#123;<br>        Rotate.write(goal);<br>      &#125;<br>      <span class="hljs-comment">//      Serial.print(&quot;Servo:Rotate Goal:&quot;);</span><br>      <span class="hljs-comment">//      Serial.println(goal);</span><br>      <span class="hljs-keyword">break</span>;<br>    <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:<br>      <span class="hljs-keyword">if</span> (slowbl == <span class="hljs-literal">true</span>) &#123;<br>        slowmove (Left, goal, ifdelay);<br>      &#125; <span class="hljs-keyword">else</span> &#123;<br>        Left.write(goal);<br>      &#125;<br>      <span class="hljs-comment">//      Serial.print(&quot;Servo:Left Goal:&quot;);</span><br>      <span class="hljs-comment">//      Serial.println(goal);</span><br>      <span class="hljs-keyword">break</span>;<br>    <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:<br>      <span class="hljs-keyword">if</span> (slowbl == <span class="hljs-literal">true</span>) &#123;<br>        slowmove (Right, goal, ifdelay);<br>      &#125; <span class="hljs-keyword">else</span> &#123;<br>        Right.write(goal);<br>      &#125;<br>      <span class="hljs-comment">//      Serial.print(&quot;Servo:Right Goal:&quot;);</span><br>      <span class="hljs-comment">//      Serial.println(goal);</span><br>      <span class="hljs-keyword">break</span>;<br>    <span class="hljs-keyword">default</span>:<br>      <span class="hljs-keyword">break</span>;<br>  &#125;<br>&#125;<br>boolean <span class="hljs-title function_">slowmove</span><span class="hljs-params">(Servo s, <span class="hljs-type">int</span> goal, boolean ifdelay)</span> &#123;<br>  <span class="hljs-type">int</span> pos = s.read();<br>  <span class="hljs-keyword">if</span> (pos &lt; goal) &#123; <span class="hljs-comment">//positive</span><br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; goal - pos; i++) &#123;<br>      s.write(s.read() + <span class="hljs-number">1</span>);<br>      <span class="hljs-keyword">if</span> (ifdelay == <span class="hljs-literal">true</span>) &#123;<br>        delay(<span class="hljs-number">15</span>);<br><br>      &#125; <span class="hljs-keyword">else</span> &#123;<br><br>      &#125;<br>    &#125;<br>    <span class="hljs-keyword">if</span> (ifdelay == <span class="hljs-literal">true</span>) &#123;<br>      Serial.print(<span class="hljs-string">&quot;Slowmove Servo from &quot;</span>);<br>      Serial.print(pos);<br>      Serial.print(<span class="hljs-string">&quot; to&quot;</span>);<br>      Serial.println(goal);<br>      Serial.print(<span class="hljs-string">&quot;Require time: &quot;</span>);<br>      Serial.print((goal - pos) * <span class="hljs-number">15</span>);<br>      Serial.println(<span class="hljs-string">&quot;ms&quot;</span>);<br>    &#125;<br>  &#125; <span class="hljs-keyword">else</span> &#123;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; pos - goal; i++) &#123;<br>      s.write(s.read() - <span class="hljs-number">1</span>);<br>      <span class="hljs-keyword">if</span> (ifdelay == <span class="hljs-literal">true</span>) &#123;<br>        delay(<span class="hljs-number">15</span>);<br><br>      &#125; <span class="hljs-keyword">else</span> &#123;<br><br>      &#125;<br>    &#125;<br>    <span class="hljs-keyword">if</span> (ifdelay == <span class="hljs-literal">true</span>) &#123;<br>      Serial.print(<span class="hljs-string">&quot;Slowmove Servo from &quot;</span>);<br>      Serial.print(pos);<br>      Serial.print(<span class="hljs-string">&quot; to&quot;</span>);<br>      Serial.println(goal);<br>      Serial.print(<span class="hljs-string">&quot;Require time: &quot;</span>);<br>      Serial.print((pos - goal) * <span class="hljs-number">15</span>);<br>      Serial.println(<span class="hljs-string">&quot;ms&quot;</span>);<br>    &#125;<br>  &#125;<br>  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>&#125;<br><span class="hljs-type">void</span> <span class="hljs-title function_">setup</span><span class="hljs-params">()</span> &#123;<br><br>  Right.attach(<span class="hljs-number">8</span>);<br>  Rotate.attach(<span class="hljs-number">9</span>);<br>  Grab.attach(<span class="hljs-number">10</span>);<br>  Left.attach(<span class="hljs-number">11</span>);<br>  pinMode(GrabButton, INPUT_PULLUP);<br>  pinMode(SoundButton, INPUT_PULLUP);<br>  pinMode(buzzer, OUTPUT);<br>  Serial.begin(<span class="hljs-number">9600</span>);<br>  Serial.println(<span class="hljs-string">&quot;=== WGNetwork Robotic Arm OS v0.1 Alpha ===&quot;</span>);<br>  Serial.println(<span class="hljs-string">&quot;Default Mode: Direct Control&quot;</span>);<br>  lcd.init(); <span class="hljs-comment">// 初始化LCD</span><br>  lcd.backlight(); <span class="hljs-comment">//设置LCD背景等亮</span><br>  lcd.setCursor(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>);               <span class="hljs-comment">//设置显示指针</span><br>  lcd.print(<span class="hljs-string">&quot;Robotic Arm Proj&quot;</span>);     <span class="hljs-comment">//输出字符到LCD1602上</span><br>  lcd.setCursor(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);<br>  lcd.print(<span class="hljs-string">&quot;*:Direct Control&quot;</span>);<br>  buzzsound();<br>  slowmove(Rotate, <span class="hljs-built_in">map</span>(analogRead(A2) / <span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">0</span>, <span class="hljs-number">180</span>), <span class="hljs-literal">true</span>);<br>  slowmove(Left, <span class="hljs-built_in">map</span>(analogRead(A0) / <span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">80</span>, <span class="hljs-number">180</span>), <span class="hljs-literal">true</span>);<br>  slowmove(Right, <span class="hljs-built_in">map</span>(analogRead(A1) / <span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">60</span>, <span class="hljs-number">180</span>), <span class="hljs-literal">true</span>);<br>  output();<br><br>  <span class="hljs-comment">//  slowmove(Rotate,Initial[0]);</span><br>  <span class="hljs-comment">//  slowmove(Left,Initial[1]);</span><br>  <span class="hljs-comment">//  slowmove(Right,Initial[2]);</span><br>  <span class="hljs-comment">//  slowmove(Grab,Initial[3]);</span><br>&#125;<br><br><span class="hljs-type">void</span> <span class="hljs-title function_">loop</span><span class="hljs-params">()</span><br>&#123;<br>  RotateRD = Rotate.read();<br>  LeftRD = Left.read();<br>  RightRD = Right.read();<br>  GrabRD = Grab.read();<br>  boolean SoundState = digitalRead(SoundButton);<br>  <span class="hljs-keyword">if</span> (SoundState == <span class="hljs-number">0</span>) &#123;<br>    buzzsound();<br>  &#125;<br>  <span class="hljs-comment">//debug</span><br>  <span class="hljs-comment">// order: 0Rotate9 1Left11 2Right8 3Grab10</span><br>  <span class="hljs-comment">// limit: 0~180 80~180 60~180 80~100</span><br>  <span class="hljs-keyword">if</span> (mode == <span class="hljs-number">0</span>) &#123;<br>    boolean GrabState = digitalRead(GrabButton);<br>    <span class="hljs-keyword">if</span> (GrabState == <span class="hljs-number">0</span>) &#123;<br>      Grab.write(<span class="hljs-number">0</span>);<br>      Grabbing = <span class="hljs-literal">true</span>;<br>      output();<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>      <span class="hljs-keyword">if</span> (Grab.read() != <span class="hljs-number">90</span>) &#123;<br>        slowmove(Grab, <span class="hljs-number">90</span>, <span class="hljs-literal">true</span>);<br>        Grabbing = <span class="hljs-literal">false</span>;<br>        output();<br>      &#125;<br>    &#125;<br>    <span class="hljs-comment">//Rotate,Left,Right</span><br>    <span class="hljs-type">int</span> pot[<span class="hljs-number">3</span>] = &#123;analogRead(A2), analogRead(A0), analogRead(A1)&#125;;<br>    <span class="hljs-type">int</span> Intend[<span class="hljs-number">3</span>] = &#123;<br>      <span class="hljs-built_in">map</span>(pot[<span class="hljs-number">0</span>] / <span class="hljs-number">8</span>, <span class="hljs-number">0</span>, <span class="hljs-number">128</span>, <span class="hljs-number">0</span>, <span class="hljs-number">180</span>),<span class="hljs-comment">//Rotate</span><br>      <span class="hljs-built_in">map</span>(pot[<span class="hljs-number">1</span>] / <span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">80</span>, <span class="hljs-number">180</span>),<span class="hljs-comment">//Left</span><br>      <span class="hljs-built_in">map</span>(pot[<span class="hljs-number">2</span>] / <span class="hljs-number">4</span>, <span class="hljs-number">0</span>, <span class="hljs-number">256</span>, <span class="hljs-number">60</span>, <span class="hljs-number">180</span>)<span class="hljs-comment">//Right</span><br>    &#125;;<br>    <span class="hljs-type">int</span> Read[<span class="hljs-number">3</span>] = &#123;RotateRD, LeftRD, RightRD&#125;;<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) &#123;<br>      <span class="hljs-keyword">if</span> (Intend[i] != Read[i]) &#123;<br>        <span class="hljs-keyword">if</span> ((Intend[i] &lt; Read[i]) &amp;&amp; (Read[i] - Intend[i] &gt; <span class="hljs-number">2</span>)) &#123;<br>          servowrite(i, Intend[i], <span class="hljs-literal">true</span>, <span class="hljs-literal">false</span>);<br>          output();<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((Intend[i] &gt; Read[i]) &amp;&amp; (Intend[i] - Read[i]   &gt; <span class="hljs-number">2</span>)) &#123;<br>          servowrite(i, Intend[i], <span class="hljs-literal">true</span>, <span class="hljs-literal">false</span>);<br>          output();<br>        &#125;<br>      &#125;<br>    &#125;<br>  &#125;<br><br>  <span class="hljs-type">int</span> j = <span class="hljs-number">0</span>;<br>  <span class="hljs-keyword">while</span> (Serial.available() &gt; <span class="hljs-number">0</span>) &#123;<br>    comdata += <span class="hljs-type">char</span>(Serial.read());<br>    delay(<span class="hljs-number">2</span>);<br>    mark = <span class="hljs-number">1</span>;<br>  &#125;<br>  <span class="hljs-keyword">if</span> (mark == <span class="hljs-number">1</span>) &#123;<br>    Serial.println(comdata);<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; comdata.length() ; i++) &#123;<br>      <span class="hljs-keyword">if</span> (comdata[i] == <span class="hljs-string">&#x27;,&#x27;</span>) &#123;<br>        j++;<br>      &#125;<br>      <span class="hljs-keyword">else</span> &#123;<br>        numdata[j] = numdata[j] * <span class="hljs-number">10</span> + (comdata[i] - <span class="hljs-string">&#x27;0&#x27;</span>);<br>      &#125;<br>    &#125;<br>    comdata = String(<span class="hljs-string">&quot;&quot;</span>);<br>    mode = <span class="hljs-number">1</span>;<br>    Serial.println(<span class="hljs-string">&quot;Serial Mode On, Manual(Direct) Control has been disabled.&quot;</span>);<br>    lcd.setCursor(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>);<br>    lcd.print(<span class="hljs-string">&quot;Serial Mode ON&quot;</span>);<br>    buzzsound();<br>    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">4</span>; i++) &#123;<br>      Serial.print(i);<br>      Serial.print(Servoname[i]);<br>      Serial.print(<span class="hljs-string">&quot; = &quot;</span>);<br>      Serial.print(numdata[i]);<br>      <span class="hljs-keyword">if</span> ((i == <span class="hljs-number">1</span>) &amp;&amp; (numdata[<span class="hljs-number">1</span>] &lt; <span class="hljs-number">80</span>)) &#123;<br>        Serial.println(<span class="hljs-string">&quot; Invalid&quot;</span>);<br>      &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((i == <span class="hljs-number">2</span>) &amp;&amp; (numdata[<span class="hljs-number">2</span>] &lt; <span class="hljs-number">60</span>))<br>      &#123; Serial.println(<span class="hljs-string">&quot; Invalid&quot;</span>);<br>      &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ((i == <span class="hljs-number">3</span>) &amp;&amp; (numdata[<span class="hljs-number">2</span>] &gt; <span class="hljs-number">60</span>))<br>      &#123; Serial.println(<span class="hljs-string">&quot; Invalid&quot;</span>);<br>      &#125; <span class="hljs-keyword">else</span> &#123;<br>        Serial.println(<span class="hljs-string">&quot; Valid&quot;</span>);<br>        <span class="hljs-keyword">if</span> (i == <span class="hljs-number">0</span>) &#123;<br>          slowmove(Rotate, numdata[<span class="hljs-number">0</span>], <span class="hljs-literal">true</span>);<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i == <span class="hljs-number">1</span>) &#123;<br>          slowmove(Left, numdata[<span class="hljs-number">1</span>], <span class="hljs-literal">true</span>);<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (i == <span class="hljs-number">2</span>) &#123;<br>          slowmove(Right, numdata[<span class="hljs-number">2</span>], <span class="hljs-literal">true</span>);<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>          slowmove(Grab, numdata[<span class="hljs-number">3</span>], <span class="hljs-literal">true</span>);<br>        &#125;<br>      &#125;<br>      numdata[i] = <span class="hljs-number">0</span>;<br>    &#125;<br>    mark = <span class="hljs-number">0</span>;<br>  &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="../../../../categories/arduino/" class="category-chain-item">arduino</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="../../../../tags/arduino/">#arduino</a>
+      
+        <a href="../../../../tags/%E7%BC%96%E7%A8%8B/">#编程</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>arduino 项目一览表</div>
+      <div>https://blog.liruinian.top/2022/12/30/arduino1/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>liruinian</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年12月30日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="../../../../2023/01/08/guide/" title="本网站访问目录">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">本网站访问目录</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"5D8PCjx346RX0ULAbXXWGDo4-gzGzoHsz","appKey":"F7fHoDRpSpKS8c6aYBQw879Y","path":"window.location.pathname","placeholder":"在这里，表达你的想法！","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"https://5d8pcjx3.lc-cn-n1-shared.com","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <p>copyright &copy; 2022 - 2023 Tim_LRN2016</p> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="../../../../js/events.js" ></script>
+<script  src="../../../../js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="../../../../js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="../../../../js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="../../../../js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
